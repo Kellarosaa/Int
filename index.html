@@ -1,0 +1,491 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Google tag (gtag.js) Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EM5BEFDGX6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-EM5BEFDGX6');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>eFunda: Loan Calculators</title>
+  <meta name="AUTHOR" content="eFunda, Inc.">
+  <meta name="DESCRIPTION" content="Calculate monthly payments, interest rates, and/or number of payments for loans.">
+  <meta name="KEYWORDS" content="loan calculator, payments, interest rates, formulas, equations, eFunda, Formula , calculators, calculate, calculations , financial, finances , formulae, formulas , interests , loans , monthly , payments , rates , theory, theories">
+  
+  <link rel="stylesheet" href="/css/style-root.css?v=1.0.0">
+  <link rel="stylesheet" href="/css/style-ros.css?v=1.0.7">
+  <link rel="stylesheet" href="/css/styles-legacy.css?v=1.0">
+  <link rel="stylesheet" href="/css/round_border.css">
+  <link rel="stylesheet" href="/css/wolfram.css?v=1.0.1">
+  <!--[if IE]>
+  <link rel="stylesheet" href="/css/wolfram_ie.css">
+  <![endif]-->
+  <link rel="stylesheet" href="/css/fa.css">
+  
+  <link rel="icon" href="/images/favicons/favicon-32.png" sizes="32x32">
+  <link rel="icon" href="/images/favicons/favicon-57.png" sizes="57x57">
+  <link rel="icon" href="/images/favicons/favicon-76.png" sizes="76x76">
+  <link rel="icon" href="/images/favicons/favicon-96.png" sizes="96x96">
+  <link rel="icon" href="/images/favicons/favicon-128.png" sizes="128x128">
+  <link rel="icon" href="/images/favicons/favicon-192.png" sizes="192x192">
+  <link rel="icon" href="/images/favicons/favicon-228.png" sizes="228x228">
+  
+  <link rel="shortcut icon" sizes="196x196" href="/images/favicons/favicon-196.png">
+  
+  <link rel="apple-touch-icon" href="/images/favicons/favicon-120.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/images/favicons/favicon-152.png" sizes="152x152">
+  <link rel="apple-touch-icon" href="/images/favicons/favicon-180.png" sizes="180x180">
+  
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/images/favicons/favicon-144.png">
+  
+  <meta name="msapplication-config" content="/images/favicons/browserconfig.xml" />
+  <script src="/js/jquery-3.4.1.min.js"></script>
+  <script src="/js/efunda-ros.js?v=1.0.9"></script>
+  <script src="/js/utilities.js?v=1.0"></script>
+  <script src="/js/webMathematica.js?v=1.0.2"></script>
+  
+
+  
+  <script async src=""></script>
+  <script>
+    window.googletag = window.googletag || {cmd: []};
+    googletag.cmd.push(function() {
+      googletag.defineSlot('/4250/eFunda', [728, 90], 'div-gpt-ad-1584717204048-0').addService(googletag.pubads()); // GlobalSpec
+      googletag.defineSlot('/4250/eFunda', [300, 250], 'div-gpt-ad-1584717204048-1').addService(googletag.pubads()); // GlobalSpec
+      googletag.defineSlot('/4250/eFunda', [160, 600], 'div-gpt-ad-1584717204048-2').addService(googletag.pubads()); // GlobalSpec
+      googletag.defineSlot('/1065348/SM_Skyscraper', [160, 600], 'div-gpt-ad-1550283326625-0').addService(googletag.pubads()); // SmartMeasurement
+      googletag.defineSlot('/1065348/SM_728x90', [728, 90], 'div-gpt-ad-1550282781000-0').addService(googletag.pubads()); // SmartMeasurement
+      googletag.defineSlot('/1065348/ROS-Top-Low-728x90', [728, 90], 'div-gpt-ad-1588786797429-0').addService(googletag.pubads()); //House
+      googletag.pubads().enableSingleRequest();
+      googletag.enableServices();
+    });
+  </script>
+  
+
+</head>
+
+<body>
+
+
+<header>
+  <div class="banner">
+    <div class="home"><a href="/home.cfm"><h1>Home</h1></a></div>
+    <div class="menu">
+      <a href="/calculator.cfm">Calculators</a>
+      <a href="/forum/forum.cfm">Forum</a>
+      <a href="https://efunda.tradepub.com/">Magazines</a>
+      <a href="/members/people/search_people.cfm">Search Members</a>
+      
+        <a href="/whyjoin.cfm">Membership</a>
+        <a href="/members/login/login.cfm?direct=y">Login</a>
+      
+    </div>
+    
+  </div>
+</header>
+
+
+
+<div class="ros-container">
+
+  <div id="ros-left-container" class="ros-left-container">
+    <input id="toggle-button" type="checkbox">
+    <div id="ros-menu" class="ros-menu">
+ 
+
+<table width="298" border="0" cellspacing="0" cellpadding="1">
+
+  <tr> 
+    <td width="10"></td>
+    <td width="284"></td>
+  </tr>
+  
+  
+  
+  <tr bgcolor="#eeeee0">
+    <td colspan="2" class="smalltext" align="center"><a href="../formula_index.cfm" class="title1"><b>Formula Home</b></a></td>
+  </tr>
+  
+  
+  <tr>
+    <td valign="top"><img src="../../images/dot.gif"></td>
+    <td class="smalltext"><b>Finance</b></td>
+  </tr>
+  
+  
+  <tr>
+    <td valign="top"><img src="/images/pixel.png"></td>
+    <td class="smalltext"><a href="finances.cfm" class="title1">Financial Terms</a></td>
+  </tr>
+   
+    <tr>
+      <td valign="top"><img src="/images/pixel.png"></td>
+      <td class="smalltext"><a href="moneyfactor.cfm" class="title1">Money Factor</a></td>
+    </tr>
+   
+  
+  
+  
+  <tr>
+    <td valign="top"><img src="../../images/dot.gif"></td>
+    <td class="smalltext"><b>Calculators</b></td>
+  </tr>
+  
+  
+  <tr bgcolor="#ccffcc">
+    <td valign="top"><img src="/images/pixel.png"></td>
+    <td class="smalltext"><b>Loan</b> <span class="footnotetext">(typical)</span></td>
+  </tr>
+  
+  <tr>
+    <td valign="top"><img src="/images/pixel.png"></td>
+    <td class="smalltext"><a href="loan_calculator_u.cfm" class="title1">Loan <span class="footnotetext">(advanced)</span></a></td>
+  </tr>
+  
+  <tr>
+    <td valign="top"><img src="/images/pixel.png"></td>
+    <td class="smalltext"><a href="mortgage_payment_c.cfm" class="title1">Canadian Mortgage</a></td>
+  </tr>
+  
+  <tr>
+    <td valign="top"><img src="/images/pixel.png"></td>
+    <td class="smalltext"><a href="lease_calculator.cfm" class="title1"><b>Lease</b> <span class="footnotetext">(typical)</span></a></td>
+  </tr>
+  
+  <tr>
+    <td valign="top"><img src="/images/pixel.png"></td>
+    <td class="smalltext"><a href="lease_calculator_u.cfm" class="title1">Lease <span class="footnotetext">(advanced)</span></a></td>
+  </tr>
+  
+  <tr>
+    <td valign="top"><img src="/images/pixel.png"></td>
+    <td class="smalltext"><a href="apr_calculator.cfm" class="title1"><b>APR</b> <span class="footnotetext">(typical)</span></a></td>
+  </tr>
+  
+  <tr>
+    <td valign="top"><img src="/images/pixel.png"></td>
+    <td class="smalltext"><a href="apr_calculator_u.cfm" class="title1">APR <span class="footnotetext">(advanced)</span></a></td>
+  </tr>
+  
+  
+  
+  
+  <tr>
+    <td valign="top"><img src="../../images/dot.gif"></td>
+    <td class="smalltext"><b>Resources</b></td>
+  </tr>
+  
+  
+  <tr>
+    <td valign="top"><img src="/images/pixel.png"></td>
+    <td class="smalltext"><a href="../bibliography.cfm" class="title1">Bibliography</a></td>
+  </tr>
+  
+
+</table>
+
+    </div>
+    <div class="ros-left-banner">
+      <!--- GlobalSpec DFP 300x250 --->
+<div id='div-gpt-ad-1584717204048-1' style='width:300px; height:250px; margin-bottom:10px;'>
+<script>
+  googletag.cmd.push(function() { googletag.display('div-gpt-ad-1584717204048-1'); });
+</script>
+</div> 
+      <div class=""ros-left-banner-2">
+        
+        <div class="ros-left-banner-2" style="border-radius:7px; border:1px solid #dbdce0; background-color:#fff; padding:15px;">
+        
+          <div style="margin-bottom:10px;"><i class="fab fa-hotjar" style="color:red"></i> <a href="https://efunda.tradepub.com/free/w_ngca03/prgm.cgi" style="font-size:0.95rem;"><b>Salary Expectation</b></a><p style="margin:0px; margin-top:3px; font-weight:300; font-size:0.85rem; line-height:1.2rem">8 things to know about the interview question "What's your salary expectation"?</p></div>
+        
+          <div style="margin-bottom:10px;"><i class="fab fa-hotjar" style="color:red"></i> <a href="https://efunda.tradepub.com/free/w_xome12/prgm.cgi" style="font-size:0.95rem;"><b>CNC Machining Design Guide</b></a><p style="margin:0px; margin-top:3px; font-weight:300; font-size:0.85rem; line-height:1.2rem">Optimize your designs, reduce machining time, and lower your costs.</p></div>
+        
+          <div style="margin-bottom:10px;"><i class="fab fa-hotjar" style="color:red"></i> <a href="https://efunda.tradepub.com/free/w_hubc40/prgm.cgi" style="font-size:0.95rem;"><b>Mechanical Engineers Outlook</b></a><p style="margin:0px; margin-top:3px; font-weight:300; font-size:0.85rem; line-height:1.2rem">Guide for those interested in becoming a mechanical engineer. Includes qualifications, pay, and job duties.</p></div>
+        
+          <div style="margin-bottom:10px;"><i class="fab fa-hotjar" style="color:red"></i> <a href="https://efunda.tradepub.com/free/w_hubc71/prgm.cgi" style="font-size:0.95rem;"><b>STEM Career Outlook</b></a><p style="margin:0px; margin-top:3px; font-weight:300; font-size:0.85rem; line-height:1.2rem">Wages, employment opportunities, and growth projections for STEM jobs.</p></div>
+        
+        <i class="fas fa-plus-circle"></i> <a href="https://efunda.tradepub.com">more free publications</a>
+        </div>
+        
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="autorelaxed"
+             data-ad-client="ca-pub-4893968732705577"
+             data-matched-content-ui-type="image_card_sidebyside"
+             data-matched-content-rows-num="5"
+             data-matched-content-columns-num="1"
+             data-ad-slot="4716282357"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+    
+    </div>
+    <div class="ros-left-house-ad">
+      
+          <div style="text-align:center; background-color:#fafafa;">
+          <!--- eFunda House 300x600 --->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- efunda house 300x600 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-4893968732705577"
+     data-ad-slot="4983956849"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+          </div>
+        
+    </div>
+  </div> 
+ 
+
+  <div id="ros-content" class="ros-content">
+
+      <div style="margin-bottom:10px;">
+        <!--- GlobalSpec DFP 728x90 --->
+<div id='div-gpt-ad-1584717204048-0' style='width:728px; height:90px;'>
+<script>
+  googletag.cmd.push(function() { googletag.display('div-gpt-ad-1584717204048-0'); });
+</script>
+</div> 
+      </div>
+    
+    <div class="menu-toggle">
+      <label for="toggle-button"><i class="fas fa-bars"></i> Toggle Menu</label>
+    </div>
+    
+    <div style="text-align:center; background-color:#cfe9ab; border-radius:5px; padding:10px; margin-bottom:5px;">
+      <form action="/search/search_efunda.cfm" id="cse-search-box" style="margin:0;">
+        
+        <input type="hidden" name="search_scope" value="all" />
+        <input type="hidden" name="cx" value="partner-pub-4893968732705577:8p6b3e740e7" />
+        <input type="hidden" name="cof" value="FORID:11" />
+        <input type="hidden" name="ie" value="UTF-8" />
+        <input type="text" class="Text" style="border:none; border-radius:5px; width:400px; height:35px; padding-left:5px;" name="q" maxlength="50" value="" />
+        <input type="submit" name="sa" value="Search efunda" style="font-size:1rem; color:white; border:none; border-radius:5px; background-color:#72993c; width:150px; height:35px; margin-left:20px;" />
+      </form>  
+    </div>
+    
+
+    
+    <div class="icon-menu" style="margin:20px 0;">
+      <div class="icon-spacer"><img src="/images/llc1.gif"></div>
+      <div class="icon-item"><a href="/materials/"><img src="/images/title4.gif"></a><br><a class="title1" href="/materials/">Materials</a><a name="PageTop"></a></div>
+      <div class="icon-spacer"><img src="/images/mid_peg1.gif"></div>
+      <div class="icon-item"><a href="/materials/"><a href="/DesignStandards/"><img src="/images/title3.gif"></a><br><a class="title1" href="/DesignStandards/">Design</a></div>
+      <div class="icon-spacer"><img src="/images/mid_peg1.gif"></div>
+      <div class="icon-item"><a href="/materials/"><a href="/processes/"><img src="/images/title2.gif"></a><br><a class="title1" href="/processes/">Processes</a></div>
+      <div class="icon-spacer"><img src="/images/mid_peg1.gif"></div>
+      <div class="icon-item"><a href="/materials/"><a href="/units/"><img src="/images/title5.gif"></a><br><a class="title1" href="/units/">Units</a></div>
+      <div class="icon-spacer"><img src="/images/mid_peg1.gif"></div>
+      <div class="icon-item"><a href="/formulae/"><img src="/images/title6.gif"></a><br><a class="title1" href="/formulae/">Formulas</a></div>
+      <div class="icon-spacer"><img src="/images/mid_peg1.gif"></div>
+      <div class="icon-item"><a href="/materials/"><a href="/math/"><img src="/images/title1.gif"></a><br><a class="title1" href="/math/">Math</a></div>
+      <div class="icon-spacer"><img src="/images/lrc1.gif"></div>
+    </div>
+
+    
+        <div style="margin-bottom:10px; ">
+        <!--- ROS In-Article --->
+<div style="">
+
+<!--- Google Adsense --->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4893968732705577"
+     data-ad-slot="7922155920"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!--- End of Google Adsense --->
+
+</div>
+        </div>
+       
+    <div class="main-meat"> 
+
+
+
+<div class="section_border_gray" style="width:100%; margin-top:20px; background-color:#F5F5F5;"><div class="section_corner_gray"><div class="top_left"><img src="/images/pixel.png"></div><div class="top_right"><img src="/images/pixel.png"></div></div><div style="background-color:#F5F5F5; margin-left:10px; margin-right:10px;">
+<table border="0" cellspacing="0" cellpadding="10">
+<tr><td bgcolor="#dddddd" class="text" align="center" colspan="2" style="padding:5px; border:1px solid #FFFFFF; border-right:1px solid #CCCCCC; border-bottom:1px solid #CCCCCC;"><b>Scenario 1: Find the Monthly Payment</b></td></tr>
+<tr><td colspan="2" style="padding:5px;"><img src="../../images/pixel.gif" width="1" height="1"></td></tr>
+<tr>
+  <td width="50%" nowrap align="right" valign="top" class="smalltext" style="padding-left:0px;">
+    <form action="loan_payment.cfm" method="post" style="margin:0px;">
+      
+      <input type="hidden" name="F" value="0">
+      <p style="margin:0px; padding:0px; padding-bottom:7px;"><b>Loan Amount (<i>C</i>)</b>:&nbsp;<input class="smalltext" style="width:120px;" type="text" name="C" size="6" value="20,000"></p>
+      <p style="margin:0px; padding:0px; padding-bottom:7px;"><b>Interest Rate % (<i>R</i>)</b>:&nbsp;<input class="smalltext" style="width:120px;" type="text" name="R" size="6" value="7.5"></p>
+      <p style="margin:0px; padding:0px; padding-bottom:7px;"><b>Number of Months (<i>N</i>)</b>:&nbsp;<input class="smalltext" style="width:120px;" type="text" name="N" size="6" value="60"></p>
+      <span style="color:firebrick;"><b>Monthly Payment (<i>P</i>)</b>:</span>&nbsp;<input class="smalltext" type="submit" style="width:120px;" value="Calculate" border="0">
+      
+    </form>
+  </td>
+  <td width="50%" valign="top" class="smalltext" style="border-left:1px dashed #ccccbb; padding-right:0px;">
+    Interest rate <b><i>R</i></b>% is always a yearly figure. However, in most loan situations it is compounded monthly. In this calculator
+    the monthly payment is calculated by the following formula where <i>r = R/</i>1200:
+    <div align="center" style="padding-top:5px;"><img src="images/loan_p.gif"></div>
+  </td>
+</tr>
+</table>
+</div><div class="section_corner_gray"><div class="bottom_left"><img src="/images/pixel.png"></div><div class="bottom_right"><img src="/images/pixel.png"></div></div></div>
+
+
+<div class="section_border_red" style="width:100%; margin-top:20px; background-color:#FFF0F0;"><div class="section_corner_red"><div class="top_left"><img src="/images/pixel.png"></div><div class="top_right"><img src="/images/pixel.png"></div></div><div style="background-color:#FFF0F0; margin-left:10px; margin-right:10px;">
+<table border="0" cellspacing="0" cellpadding="10">
+<tr><td bgcolor="#F0D5D5" class="text" align="center" colspan="2" style="padding:5px; border:1px solid #FFFFFF; border-right:1px solid #E6B6B6; border-bottom:1px solid #E6B6B6;"><b>Scenario 2: Find the Interest Rate</b></td></tr>
+<tr><td colspan="2" style="padding:5px;"><img src="../../images/pixel.gif" width="1" height="1"></td></tr>
+<tr>
+  <td width="50%" nowrap align="right" valign="top" class="smalltext" style=" padding-left:0px;">
+    <form action="loan_rate.cfm" method="post" style="margin:0px;">
+      
+      <input type="hidden" name="F" value="0">
+      <p style="margin:0px; padding:0px; padding-bottom:7px;"><b>Loan Amount (<i>C</i>)</b>:&nbsp;<input class="smalltext" style="width:120px;" type="text" name="C" size="6" value="20,000"></p>
+      <p style="margin:0px; padding:0px; padding-bottom:7px;"><b>Monthly Payment (<i>P</i>)</b>:&nbsp;<input class="smalltext" style="width:120px;" type="text" name="P" size="6" value="450"></p>
+      <p style="margin:0px; padding:0px; padding-bottom:7px;"><b>Number of Months (<i>N</i>)</b>:&nbsp;<input class="smalltext" style="width:120px;" type="text" name="N" size="6" value="60"></p>
+      <span style="color:firebrick;"><b>Interest Rate % (<i>R</i>)</b>:</span>&nbsp;<input class="smalltext" style="width:120px;" type="submit" value="Calculate" border="0">
+      
+    </form>
+  </td>
+  <td width="50%" valign="top" class="smalltext" style="border-left:1px dashed #E09999; padding-right:0px;">
+    For given <i><b>C</b></i>, <i><b>P</b></i> and <i><b>N</b></i>, one can only solve the following equation for <span style="color:firebrick;"><i><b>r</b></i></span> by numerical means.
+    <div align="center" style="padding:5px;"><img align="absmiddle" src="images/loan_r.gif"></div>
+    Given the rather smooth behavior of this equation, this calculator employs the <a href="../../math/num_rootfinding/num_rootfinding.cfm#Newton_Raphson">Newton-Raphson method</a> with an educated initial guess:
+    <div align="center" style="padding-top:5px;"><img align="absmiddle" src="images/guess.gif"></div>    
+  </td>
+</tr>
+</table>
+</div><div class="section_corner_red"><div class="bottom_left"><img src="/images/pixel.png"></div><div class="bottom_right"><img src="/images/pixel.png"></div></div></div>
+
+<div class="section_border_blue" style="width:100%; margin-top:20px; margin-bottom:20px; background-color:#E3EEFB;"><div class="section_corner_blue"><div class="top_left"><img src="/images/pixel.png"></div><div class="top_right"><img src="/images/pixel.png"></div></div><div style="background-color:#E3EEFB; margin-left:10px; margin-right:10px;">
+<table border="0" cellspacing="0" cellpadding="10">
+<tr><td bgcolor="#CAE1FB" class="text" align="center" colspan="2" style="padding:5px; border:1px solid #FFFFFF; border-right:1px solid #ACCAF0; border-bottom:1px solid #ACCAF0;"><b>Scenario 3: Find the Number of Payments</b></td></tr>
+<tr><td colspan="2" style="padding:5px;"><img src="../../images/pixel.gif" width="1" height="1"></td></tr>
+<tr>
+  <td width="50%" align="right" valign="top" class="smalltext" style="padding-left:0px;">
+    <form action="loan_period.cfm" method="post" style="margin:0px;">
+      
+      <input type="hidden" name="F" value="0">
+      <p style="margin:0px; padding:0px; padding-bottom:7px;"><b>Loan Amount (<i>C</i>)</b>:&nbsp;<input class="smalltext" style="width:120px;" type="text" name="C" size="6" value="20,000"></p>
+      <p style="margin:0px; padding:0px; padding-bottom:7px;"><b>Interest Rate % (<i>R</i>)</b>:&nbsp;<input class="smalltext" style="width:120px;" type="text" name="R" size="6" value="7.5"></p>
+      <p style="margin:0px; padding:0px; padding-bottom:7px;"><b>Monthly Payment (<i>P</i>)</b>:&nbsp;<input class="smalltext" style="width:120px;" type="text" name="P" size="6" value="450"></p>
+      <span style="color:firebrick;"><b>Number of Months (<i>N</i>)</b>:</span>&nbsp;<input class="smalltext" style="width:120px;" type="submit" value="Calculate" border="0">
+      
+    </form>
+  </td>
+  <td width="50%" valign="top" class="smalltext" style="border-left:1px dashed #ACCAF0; padding-right:0px;">
+    This calculator figures out the number of months <b><i>N</i></b> by the following closed-form expression:
+    <div align="center" style="padding:5px;"><img src="images/loan_n.gif"></div>
+    Notice that <b><i>N</i></b> has to be an integer, so the monthly payment <b><i>P</i></b> might be slightly adjusted to satisfy this condition.
+  </td>
+</tr>
+</table>
+</div><div class="section_corner_blue"><div class="bottom_left"><img src="/images/pixel.png"></div><div class="bottom_right"><img src="/images/pixel.png"></div></div></div>
+
+
+
+    </div> 
+
+
+    <div id=""gLinksInePageBar"" class="SectionTitle" style="padding:30px 0 5px 0"><b>Glossary</b></div>
+    <div id="gLinksInePage" class="smalltext" style="padding:10px; border:1px solid #666; border-radius:7px;">
+    
+      <div class="bg-list"><a href="https://www.efunda.com/glossary/units/units--time--month_sidereal.cfm" class="title1">Units&nbsp;&raquo;&nbsp;Time&nbsp;&raquo;&nbsp;Month (sidereal)</a></div>
+    
+      <div class="bg-list"><a href="https://www.efunda.com/glossary/units/units--time--month_synodic_lunar_month.cfm" class="title1">Units&nbsp;&raquo;&nbsp;Time&nbsp;&raquo;&nbsp;Month (synodic), Lunar Month</a></div>
+    
+      <div class="bg-list"><a href="https://www.efunda.com/glossary/units/units--time--month_30_days.cfm" class="title1">Units&nbsp;&raquo;&nbsp;Time&nbsp;&raquo;&nbsp;Month (30 Days)</a></div>
+    
+      <div class="bg-list"><a href="https://www.efunda.com/glossary/units/units--time--month_solar_mean.cfm" class="title1">Units&nbsp;&raquo;&nbsp;Time&nbsp;&raquo;&nbsp;Month (solar Mean)</a></div>
+        
+    </div>
+  
+        
+        <div class="SectionTitle" style="margin-top:40px;"><a class="title1" href="https://efunda.tradepub.com"><b>FREE Publications</b></a></div>
+        <div><img src="/images/section_bar_1.png"></div>
+        <div style="padding:10px 0; display:flex; flex-direction:row; flex-wrap:wrap; justify-content:space-between; margin-bottom:30px;">
+          
+            <div style="position:relative; width:48%; padding:5px 0;">
+              <div style="width:20%; float:left;"><a href="https://efunda.tradepub.com/free/w_ngca03/prgm.cgi"><img style="width:100%; height:auto;" src="https://img.tradepub.com/free/w_ngca03/images/w_ngca03c2.gif" align="left"></a></div>
+              <div style="width:80%; float:right; font-weight:300"><a href="https://efunda.tradepub.com/free/w_ngca03/prgm.cgi" style="font-size:1rem;" onmouseover="showDynamicBalloon('divDynamicBalloon', findPosX(this), findPosY(this), this.offsetWidth, 0, 0);" onmouseout="mouseIntoDiv(this,event);"><b>Salary Expectation</b></a><p style="margin:0px; margin-top:3px; font-size:0.9rem; line-height:1.2rem">8 things to know about the interview question "What's your salary expectation"?</p></div>
+            </div>
+          
+            <div style="position:relative; width:48%; padding:5px 0;">
+              <div style="width:20%; float:left;"><a href="https://efunda.tradepub.com/free/w_xome12/prgm.cgi"><img style="width:100%; height:auto;" src="https://img.tradepub.com/free/w_xome12/images/w_xome12c2.gif" align="left"></a></div>
+              <div style="width:80%; float:right; font-weight:300"><a href="https://efunda.tradepub.com/free/w_xome12/prgm.cgi" style="font-size:1rem;" onmouseover="showDynamicBalloon('divDynamicBalloon', findPosX(this), findPosY(this), this.offsetWidth, 0, 1);" onmouseout="mouseIntoDiv(this,event);"><b>CNC Machining Design Guide</b></a><p style="margin:0px; margin-top:3px; font-size:0.9rem; line-height:1.2rem">Optimize your designs, reduce machining time, and lower your costs.</p></div>
+            </div>
+          
+            <div style="position:relative; width:48%; padding:5px 0;">
+              <div style="width:20%; float:left;"><a href="https://efunda.tradepub.com/free/w_hubc40/prgm.cgi"><img style="width:100%; height:auto;" src="https://img.tradepub.com/free/w_hubc40/images/w_hubc40c2.gif" align="left"></a></div>
+              <div style="width:80%; float:right; font-weight:300"><a href="https://efunda.tradepub.com/free/w_hubc40/prgm.cgi" style="font-size:1rem;" onmouseover="showDynamicBalloon('divDynamicBalloon', findPosX(this), findPosY(this), this.offsetWidth, 0, 2);" onmouseout="mouseIntoDiv(this,event);"><b>Mechanical Engineers Outlook</b></a><p style="margin:0px; margin-top:3px; font-size:0.9rem; line-height:1.2rem">Guide for those interested in becoming a mechanical engineer. Includes qualifications, pay, and job duties.</p></div>
+            </div>
+          
+            <div style="position:relative; width:48%; padding:5px 0;">
+              <div style="width:20%; float:left;"><a href="https://efunda.tradepub.com/free/w_hubc71/prgm.cgi"><img style="width:100%; height:auto;" src="https://img.tradepub.com/free/w_hubc71/images/w_hubc71c2.gif" align="left"></a></div>
+              <div style="width:80%; float:right; font-weight:300"><a href="https://efunda.tradepub.com/free/w_hubc71/prgm.cgi" style="font-size:1rem;" onmouseover="showDynamicBalloon('divDynamicBalloon', findPosX(this), findPosY(this), this.offsetWidth, 0, 3);" onmouseout="mouseIntoDiv(this,event);"><b>STEM Career Outlook</b></a><p style="margin:0px; margin-top:3px; font-size:0.9rem; line-height:1.2rem">Wages, employment opportunities, and growth projections for STEM jobs.</p></div>
+            </div>
+          
+          <div class="smalltext" style="width:100%; text-align:right"><i class="fas fa-plus-circle"></i> <a href="https://efunda.tradepub.com">more publications</a></div>
+        </div>
+        
+        
+            <div style="text-align:center; margin:80px 0 20px 0;">
+              <!--- eFunda House In-Article ROS --->
+<div style="border:1px solid #ecde95;">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4893968732705577"
+     data-ad-slot="7922155920"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+            </div>
+           
+  </div>
+</div>
+ 
+ 
+
+
+<footer>
+  <div class="container">
+    <a href="/whyjoin.cfm">Membership</a> 
+    <a href="/about/about.cfm">About Us</a>
+    <a href="/members/privacy.cfm">Privacy</a>
+    <a href="/disclaimer.cfm">Disclaimer</a>
+    <a href="/about/contact.cfm">Contact Us</a>
+    <a href="/eds">Directory</a>
+    <a href="https://efunda.co">Advertise</a>
+    <p>copyright &copy; 1999-2024 eFunda, Inc.</p>
+  </div>
+</footer>
+
+<script type="text/javascript">
+var infolinks_pid = 3417824;
+var infolinks_wsid = 0;
+</script>
+<script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
+
+
+</body>
+</html>
